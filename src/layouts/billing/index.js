@@ -75,7 +75,7 @@ function Billing() {
       body: urlencoded,
       redirect: "follow",
     };
-    fetch("http://localhost:5000/api/signup", requestOptions)
+    fetch("http://localhost:3000/api/onepage", requestOptions)
       .then((response) => response.text())
       .then((result) => console.log(result))
       .catch((error) => console.log("error", error));
