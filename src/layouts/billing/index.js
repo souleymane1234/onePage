@@ -75,7 +75,7 @@ function Billing() {
       body: urlencoded,
       redirect: "follow",
     };
-    fetch("http://localhost:3000/api/onepage", requestOptions)
+    fetch("https://pleasant-shirt-bass.cyclic.app/api/onepage", requestOptions)
       .then((response) => response.text())
       .then((result) => console.log(result))
       .catch((error) => console.log("error", error));
